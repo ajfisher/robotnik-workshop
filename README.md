@@ -5,6 +5,21 @@ with including information about how the basic circuits work, some thoughts
 around any physical build requirements you may have and then some examples as
 well.
 
+This guide will show you the basics of using robotnik. The other guides will
+walk you through other aspects of the workshop.
+
+* [Electronic Circuits](./electronics/README.md)
+* [Physical build](./physical/README.md)
+* [JS code examples for Robotnik Exercises](./code/README.md)
+
+## Quick view
+
+The gif below will show you a super fast view of how the interface works. The
+rest of this readme guide will explain it in detail.
+
+![Walkthrough](./images/robotnik.gif)
+
+
 ## Running robotnik
 
 This should be up and running on your machine. You can tell if it's working
