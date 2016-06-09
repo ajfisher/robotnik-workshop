@@ -27,7 +27,7 @@ side and it is connected to ground.
 
 ![LED Circuit](./led_bb.png)
 
-Make sure the LED is connected to pin 10.
+Make sure the LED is connected to pin 11.
 
 Once you've built the circuit, it's time to program it.
 
@@ -67,7 +67,7 @@ var board = new five.Board();
 board.on("ready", function() {
 
   // Create a standard `led` component instance
-  var led = new five.Led(10);
+  var led = new five.Led(11);
 
   led.blink(500);
 });
@@ -85,4 +85,6 @@ node code/led.js
 Other things you can do:
 
 * Try out other parts of the `Led` API such as blinking and stopping
+* Pin 11 is a "PWM" pin which means you can use it to simulate analog voltage
+levels. Try out the fade part of the API.
 * Move onto [Exercise 2 - Moving a Servo](./servo.md)
