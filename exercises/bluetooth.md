@@ -1,4 +1,4 @@
-# Exercise 5 - Goign bluetooth
+# Exercise 5: Going bluetooth
 
 This exercise assumes you have your robot working and you're simply looking to
 make it bluetooth enabled. In this case, bluetooth is going to be used to replace

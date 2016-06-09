@@ -1,4 +1,4 @@
-# Spinning a motor
+# Exercise 3: Spinning a motor
 
 A normal DC motor is great for turning wheels however they can draw a lot
 of current. Far too much for an arduino to support. As such a motor

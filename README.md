@@ -10,7 +10,6 @@ walk you through other aspects of the workshop.
 
 * [Exercise details](./exercises/README.md)
 * [Physical build examples](./physical/README.md)
-* [JS code examples for Robotnik Exercises](./code/README.md)
 
 ## Quick view
 

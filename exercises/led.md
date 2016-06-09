@@ -1,4 +1,4 @@
-# Blinking an LED
+# Exercise 1: Blinking an LED
 
 An LED is a common method of creating light in a project. They come in a huge
 variety of colours and sizes.

@@ -1,4 +1,4 @@
-# Exercise 4 - Control a wheeled robot
+# Exercise 4: Control a wheeled robot
 
 Robots can take many different designs for locomotion. The design we'll use is
 a classic that is well known and has been used in all sorts of robots since the

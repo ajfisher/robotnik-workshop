@@ -1,4 +1,4 @@
-# Moving a servo
+# Exercise 2: Moving a servo
 
 A servo is a small motor that is has feedback on it to determine what position
 it has rotated to. Servos are used in a lot of robotics due to high torque and
