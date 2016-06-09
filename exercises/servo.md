@@ -26,7 +26,7 @@ instead.
 
 ![Servo Circuit](./servo_bb.png)
 
-Make sure the Servo is connected to pin 5.
+Make sure the Servo is connected to pin 3.
 
 ## Build the code in Robotnik
 
@@ -67,7 +67,7 @@ var rl = readline.createInterface({
 });
 
 five.Board().on("ready", function() {
-  var servo = new five.Servo(5);
+  var servo = new five.Servo(3);
 
   rl.setPrompt("SERVO TEST (0-180)> ");
   rl.prompt();

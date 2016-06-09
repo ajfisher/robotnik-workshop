@@ -61,14 +61,16 @@
             "name": "servo1",
             "class": "Servo",
             "config": {
-                "pin": "3"
+                "pin": "3",
+                "type": "standard"
             }
         },
         {
             "name": "servo2",
             "class": "Servo",
             "config": {
-                "pin": "4"
+                "pin": "4",
+                "type": "standard"
             }
         }
     ],
@@ -109,7 +111,7 @@
             "name": "Spin a motor",
             "description": "Now make the left motor turn different directions based on which button you press.",
             "components": [
-                "leftMotor"
+                "leftMotor", "rightMotor"
             ]
         },
         {
