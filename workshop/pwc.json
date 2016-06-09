@@ -21,8 +21,8 @@
             "class": "Motor",
             "config": {
                 "pins": {
-                    "pwm": 5,
-                    "dir": 4
+                    "pwm": 9,
+                    "dir": 8
                 },
                 "invertPWM": false
             }
@@ -32,7 +32,7 @@
             "class": "Sensor",
             "config": {
                 "pin": "A2",
-                "freq": 500
+                "freq": 250
             }
         },
         {
@@ -40,7 +40,7 @@
             "class": "Sensor",
             "config": {
                 "pin": "A3",
-                "freq": 100
+                "freq": 250
             }
         },
         {
@@ -51,24 +51,24 @@
             }
         },
         {
-            "name": "led10",
+            "name": "led11",
             "class": "Led",
             "config": {
-                "pin": "10"
+                "pin": "11"
             }
         },
         {
             "name": "servo1",
             "class": "Servo",
             "config": {
-                "pin": "7"
+                "pin": "3"
             }
         },
         {
             "name": "servo2",
             "class": "Servo",
             "config": {
-                "pin": "8"
+                "pin": "4"
             }
         }
     ],
@@ -93,16 +93,16 @@
     "exercises": [
         {
             "name": "Blink an LED",
-            "description": "Make the LED connected to pin 10 turn on and off when you press the button",
+            "description": "Make the LED connected to pin 11 turn on and off when you press the button",
             "components": [
-                "led10"
+                "led11"
             ]
         },
         {
             "name": "Move a servo",
-            "description": "Make the servo attached to pin XXX change position as you press and release the green button",
+            "description": "Make the servo attached to pin 3 change position as you press and release the green button",
             "components": [
-                "led10", "servo1", "servo2"
+                "led11", "servo1", "servo2"
             ]
         },
         {
@@ -116,7 +116,7 @@
             "name": "Control a wheeled robot",
             "description": "Now control both motors depending on the direction of the joystick",
             "components": [
-                "leftMotor", "rightMotor", "led10", "servo1", "servo2"
+                "leftMotor", "rightMotor", "led11", "servo1", "servo2"
             ]
         },
         {
@@ -126,7 +126,7 @@
                 "port": "/dev/rfcomm0"
             },
             "components": [
-                "leftMotor", "rightMotor", "led10", "servo1", "servo2"
+                "leftMotor", "rightMotor", "led11", "servo1", "servo2"
             ]
         }
     ]
