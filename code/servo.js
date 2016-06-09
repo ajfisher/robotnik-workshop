@@ -9,7 +9,7 @@ var rl = readline.createInterface({
 });
 
 five.Board().on("ready", function() {
-  var servo = new five.Servo(10);
+  var servo = new five.Servo(5);
 
   rl.setPrompt("SERVO TEST (0-180)> ");
   rl.prompt();
