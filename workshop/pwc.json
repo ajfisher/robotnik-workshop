@@ -113,25 +113,20 @@
             ]
         },
         {
+            "name": "Control a wheeled robot",
             "description": "Now control both motors depending on the direction of the joystick",
             "components": [
-                "leftMotor", "rightMotor"
+                "leftMotor", "rightMotor", "led10", "servo1", "servo2"
             ]
         },
         {
-            "description": "Advanced: Take a reading from the left and right line sensors. Use this information to control the motors in order to follow a line. Hint: if both sensors are ON the line go straight, if the left sensor is OFF the line then turn back to the right and if the right sensor is OFF the line turn back towards the left.",
+            "name": "Switching to bluetooth",
+            "description": "Now we need to untether your robot",
+            "board_opts": {
+                "port": "/dev/rfcomm0"
+            },
             "components": [
-                "leftMotor", "rightMotor", "lineSensorLeft", "lineSensorRight"
-            ],
-            "exercise_blocks": [
-                {
-                    "name": "controls_if",
-                    "category": "logic"
-                },
-                {
-                    "name": "logic_compare",
-                    "category": "logic"
-                }
+                "leftMotor", "rightMotor", "led10", "servo1", "servo2"
             ]
         }
     ]
