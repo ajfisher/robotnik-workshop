@@ -64,6 +64,8 @@ To build a similar circuit in javascript to run from a console we can use an
 script such as the following.
 
 ```javascript
+// TODO
+
 ```
 
 Make sure you have the Johnny-Five package installed and you can run it from
