@@ -41,3 +41,6 @@ then you might need a second battery pack to deal with the current draw.
 Consider powering the Bluetooth and arduino from one pack and your motors and
 servos from another (probably the AA batteries).
 
+
+<!--- pandoc commands --->
+\newpage

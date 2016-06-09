@@ -100,3 +100,5 @@ but rapid movement of the servo and amplify it to make a "flipper"
 * Add another servo on pin 4 and see if you can use them together.
 * Move onto [Exercise 3 - Spinning a Motor](./motor.md)
 
+<!--- pandoc commands --->
+\newpage

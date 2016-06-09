@@ -88,3 +88,6 @@ Other things you can do:
 * Pin 11 is a "PWM" pin which means you can use it to simulate analog voltage
 levels. Try out the fade part of the API.
 * Move onto [Exercise 2 - Moving a Servo](./servo.md)
+
+<!--- pandoc commands --->
+\newpage
