@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav id="TOC">
+<ul>
+<li><a href="#exercise-1-blinking-an-led">Exercise 1: Blinking an LED</a><ul>
+<li><a href="#build-the-circuit">Build the circuit</a></li>
+<li><a href="#build-the-code-in-robotnik">Build the code in Robotnik</a></li>
+<li><a href="#build-code-in-javascript">Build code in JavaScript</a></li>
+<li><a href="#going-further">Going further</a></li>
+</ul></li>
+<li><a href="#exercise-2-moving-a-servo">Exercise 2: Moving a servo</a><ul>
+<li><a href="#build-the-circuit-1">Build the circuit</a></li>
+<li><a href="#build-the-code-in-robotnik-1">Build the code in Robotnik</a></li>
+<li><a href="#build-code-in-javascript-1">Build code in JavaScript</a></li>
+<li><a href="#going-further-1">Going further</a></li>
+</ul></li>
+<li><a href="#exercise-3-spinning-a-motor">Exercise 3: Spinning a motor</a><ul>
+<li><a href="#build-the-circuit-2">Build the circuit</a></li>
+<li><a href="#build-the-code-in-robotnik-2">Build the code in Robotnik</a></li>
+<li><a href="#build-code-in-javascript-2">Build code in JavaScript</a></li>
+<li><a href="#going-further-2">Going further</a></li>
+</ul></li>
+<li><a href="#exercise-4-control-a-wheeled-robot">Exercise 4: Control a wheeled robot</a><ul>
+<li><a href="#build-the-circuit-3">Build the circuit</a></li>
+<li><a href="#build-the-code-in-robotnik-3">Build the code in Robotnik</a></li>
+<li><a href="#build-code-in-javascript-3">Build code in JavaScript</a></li>
+<li><a href="#going-further-3">Going further</a></li>
+</ul></li>
+<li><a href="#exercise-5-going-bluetooth">Exercise 5: Going bluetooth</a><ul>
+<li><a href="#build-the-circuit-4">Build the circuit</a></li>
+<li><a href="#build-the-code-in-robotnik-4">Build the code in Robotnik</a></li>
+<li><a href="#going-further-4">Going further</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="exercise-1-blinking-an-led"><a href="#exercise-1-blinking-an-led">Exercise 1: Blinking an LED</a></h1>
+<p>An LED is a common method of creating light in a project. They come in a huge variety of colours and sizes.</p>
+<p>In this exercise you’ll blink an LED under software control. Blinking an LED is an important “Hello World” type example of how to use hardware as the circuit is very simple but being able to control a physical thing by using software illustrates many of the core concepts. Once you can do this then you can control other things in your environment as well.</p>
+<h2 id="build-the-circuit"><a href="#build-the-circuit">Build the circuit</a></h2>
+<h3 id="requirements"><a href="#requirements">Requirements</a></h3>
+<ul>
+<li>1x Resistor (any size will do but the bigger the less bright it will be)</li>
+<li>1x LED</li>
+<li>1x Arduino</li>
+<li>1x breadboard</li>
+<li>Jumper wires</li>
+</ul>
+<p>Build the circuit below, taking care to note that an LED has polarity. This means it only works in one direction. The “long” leg is the positive side and it connects to your source of power through the resistor (which slows the flow of current and stops the LED from burning out). The “short” leg is the negative side and it is connected to ground.</p>
+<figure>
+<img src="./images/led_bb.png" alt="LED Circuit" /><figcaption>LED Circuit</figcaption>
+</figure>
+<p>Make sure the LED is connected to pin 11.</p>
+<p>Once you’ve built the circuit, it’s time to program it.</p>
+<h2 id="build-the-code-in-robotnik"><a href="#build-the-code-in-robotnik">Build the code in Robotnik</a></h2>
+<p>Select the <code>Controller</code> from the toolbox then grab the controller block and drop it onto the workspace. By default it’s wired up to the “red” button however you can change that to another button or the joystick controller if you want.</p>
+<figure>
+<img src="./images/led-controller.png" alt="Select controller" /><figcaption>Select controller</figcaption>
+</figure>
+<p>Next select <code>Actuator</code> from the toolbox and add the LED block onto the workspace and connect it into the top of the controller press event block.</p>
+<figure>
+<img src="./images/led-turnon.png" alt="LED" /><figcaption>LED</figcaption>
+</figure>
+<p>When the button is pressed, this will turn the LED ON which is what we want to happen. After that we add another LED block but this time change it’s state to turn off instead.</p>
+<figure>
+<img src="./images/led-turnoff.png" alt="LED off" /><figcaption>LED off</figcaption>
+</figure>
+<p>That’s looking pretty good. Save your workspace, run it and you should now be able to press the red button on the controller and it will turn your LED on. When you release the button it should turn it off.</p>
+<h2 id="build-code-in-javascript"><a href="#build-code-in-javascript">Build code in JavaScript</a></h2>
+<p>To build a similar circuit in javascript to run from a console we can use an script such as the following.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> five = <span class="fu">require</span>(<span class="st">&quot;johnny-five&quot;</span>);
+
+<span class="kw">var</span> board = <span class="kw">new</span> <span class="ot">five</span>.<span class="fu">Board</span>();
+
+<span class="ot">board</span>.<span class="fu">on</span>(<span class="st">&quot;ready&quot;</span>, <span class="kw">function</span>() {
+
+  <span class="co">// Create a standard `led` component instance</span>
+  <span class="kw">var</span> led = <span class="kw">new</span> <span class="ot">five</span>.<span class="fu">Led</span>(<span class="dv">11</span>);
+
+  <span class="ot">led</span>.<span class="fu">blink</span>(<span class="dv">500</span>);
+});</code></pre>
+<p>Make sure you have the Johnny-Five package installed and you can run it from the command line with</p>
+<pre><code>node code/led.js</code></pre>
+<h2 id="going-further"><a href="#going-further">Going further</a></h2>
+<p>Other things you can do:</p>
+<ul>
+<li>Try out other parts of the <code>Led</code> API such as blinking and stopping</li>
+<li>Pin 11 is a “PWM” pin which means you can use it to simulate analog voltage levels. Try out the fade part of the API.</li>
+<li>Move onto <a href="./servo.md">Exercise 2 - Moving a Servo</a></li>
+</ul>
+<!--- pandoc commands --->
+<p></p>
+<h1 id="exercise-2-moving-a-servo"><a href="#exercise-2-moving-a-servo">Exercise 2: Moving a servo</a></h1>
+<p>A servo is a small motor that is has feedback on it to determine what position it has rotated to. Servos are used in a lot of robotics due to high torque and reasonable precision versus their cost.</p>
+<p>In this exercise you’ll move the servo to a position on the press of a button and when it’s released it will move back to it’s starting position.</p>
+<h2 id="build-the-circuit-1"><a href="#build-the-circuit-1">Build the circuit</a></h2>
+<h3 id="requirements-1"><a href="#requirements-1">Requirements</a></h3>
+<ul>
+<li>1x Servo</li>
+<li>1x Arduino</li>
+<li>Jumper wires</li>
+</ul>
+<p>A servo has 3 wires, voltage (usually red), ground (usually black or brown) and signal (usually yellow or white). The servo is permanently powered through voltage and ground and then the signal line is connected to a digital pin on the arduino which sends messages to it to tell it where to move to.</p>
+<p>Small servos like this one can be run from the arduino when this is the only thing being powered but generally the power and ground would connect to a battery instead.</p>
+<figure>
+<img src="images/servo_bb.png" alt="Servo Circuit" /><figcaption>Servo Circuit</figcaption>
+</figure>
+<p>Make sure the Servo is connected to pin 3.</p>
+<h2 id="build-the-code-in-robotnik-1"><a href="#build-the-code-in-robotnik-1">Build the code in Robotnik</a></h2>
+<p>Select the <code>Controller</code> from the toolbox then grab the controller block and drop it onto the workspace. By default it’s wired up to the “red” button however you can change that to another button or the joystick controller if you want.</p>
+<figure>
+<img src="./images/led-controller.png" alt="Select controller" /><figcaption>Select controller</figcaption>
+</figure>
+<p>Next select <code>Actuator</code> from the toolbox and add the Servo block onto the workspace and connect it into the top of the controller press event block.</p>
+<figure>
+<img src="./images/servo-move-180.png" alt="Servo" /><figcaption>Servo</figcaption>
+</figure>
+<p>When the button is pressed, this will move the servo to one extent of it’s arc - 180 degrees in this case (most servos can move 180 degrees of a circle). When the button is released we want to move it back to 0 degrees.</p>
+<figure>
+<img src="./images/servo-move-0.png" alt="Servo off" /><figcaption>Servo off</figcaption>
+</figure>
+<p>When you run this code you should see the servo move through it’s whole range and back again when the servo is released.</p>
+<h2 id="build-code-in-javascript-1"><a href="#build-code-in-javascript-1">Build code in JavaScript</a></h2>
+<p>To build a similar circuit in javascript to run from a console we can use an script such as the following.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="co">// Used from johnny-five.io examples</span>
+
+<span class="kw">var</span> five = <span class="fu">require</span>(<span class="st">&quot;johnny-five&quot;</span>);
+<span class="kw">var</span> readline = <span class="fu">require</span>(<span class="st">&quot;readline&quot;</span>);
+
+<span class="kw">var</span> rl = <span class="ot">readline</span>.<span class="fu">createInterface</span>({
+  <span class="dt">input</span>: <span class="ot">process</span>.<span class="fu">stdin</span>,
+  <span class="dt">output</span>: <span class="ot">process</span>.<span class="fu">stdout</span>
+});
+
+<span class="ot">five</span>.<span class="fu">Board</span>().<span class="fu">on</span>(<span class="st">&quot;ready&quot;</span>, <span class="kw">function</span>() {
+  <span class="kw">var</span> servo = <span class="kw">new</span> <span class="ot">five</span>.<span class="fu">Servo</span>(<span class="dv">3</span>);
+
+  <span class="ot">rl</span>.<span class="fu">setPrompt</span>(<span class="st">&quot;SERVO TEST (0-180)&gt; &quot;</span>);
+  <span class="ot">rl</span>.<span class="fu">prompt</span>();
+
+  <span class="ot">rl</span>.<span class="fu">on</span>(<span class="st">&quot;line&quot;</span>, <span class="kw">function</span>(line) {
+    <span class="ot">servo</span>.<span class="fu">to</span>(+<span class="ot">line</span>.<span class="fu">trim</span>());
+    <span class="ot">rl</span>.<span class="fu">prompt</span>();
+  }).<span class="fu">on</span>(<span class="st">&quot;close&quot;</span>, <span class="kw">function</span>() {
+    <span class="ot">process</span>.<span class="fu">exit</span>(<span class="dv">0</span>);
+  });
+});</code></pre>
+<p>Make sure you have the Johnny-Five package installed and you can run it from the command line with</p>
+<pre><code>node code/servo.js</code></pre>
+<p>Once run, you’ll be able to put in a number on the command line and the servo will move to this position.</p>
+<h2 id="going-further-1"><a href="#going-further-1">Going further</a></h2>
+<p>Other things you can do:</p>
+<ul>
+<li>Try creating hinges and attachments to the servo arms so you can use a small but rapid movement of the servo and amplify it to make a “flipper”</li>
+<li>Add another servo on pin 4 and see if you can use them together.</li>
+<li>Move onto <a href="./motor.md">Exercise 3 - Spinning a Motor</a></li>
+</ul>
+<!--- pandoc commands --->
+<p></p>
+<h1 id="exercise-3-spinning-a-motor"><a href="#exercise-3-spinning-a-motor">Exercise 3: Spinning a motor</a></h1>
+<p>A normal DC motor is great for turning wheels however they can draw a lot of current. Far too much for an arduino to support. As such a motor controller is used to manage the speed and direction of the motor.</p>
+<p>In this exercise, you’ll make a motor change directions based on the position of the joystick.</p>
+<h2 id="build-the-circuit-2"><a href="#build-the-circuit-2">Build the circuit</a></h2>
+<h3 id="requirements-2"><a href="#requirements-2">Requirements</a></h3>
+<ul>
+<li>1x DC Motor</li>
+<li>1x Motor Controller</li>
+<li>1x Battery pack</li>
+<li>1x Arduino</li>
+<li>Jumper wires</li>
+</ul>
+<p>The motor controller has two “channels” which can be used to control 2 different DC motors. Each channel (labelled A and B) then has two pins used to control the speed and direction of the motor. These are labelled “1A” and “1B” so you end up with “A-1A”, “A-1B” to control the A motor and “B-1A”, “B-1B” to control the B motor.</p>
+<p>Finally, the motor wires are connected to the screw terminal for the channel you are attaching them to.</p>
+<p>Build the circuit below.</p>
+<figure>
+<img src="images/motor_schematic.png" alt="Servo Circuit" /><figcaption>Servo Circuit</figcaption>
+</figure>
+<h2 id="build-the-code-in-robotnik-2"><a href="#build-the-code-in-robotnik-2">Build the code in Robotnik</a></h2>
+<p>Select the <code>Controller</code> from the toolbox then grab the controller block and drop it onto the workspace. This time we want to select the “Up” event and we want to add another controller where we select the “Down” event.</p>
+<figure>
+<img src="./images/motor-controller.png" alt="Select controller" /><figcaption>Select controller</figcaption>
+</figure>
+<p>Next select <code>Actuator</code> from the toolbox and add the Motor block onto the workspace and connect it into the bottom of the “Up controller” press event block. Do the same for the “Down controller” event block as well. Set both motor blocks to “Stop”.</p>
+<figure>
+<img src="./images/motor-stop.png" alt="Motor Stop" /><figcaption>Motor Stop</figcaption>
+</figure>
+<p>This will set the motors to stop when the joystick is returned to the “neutral” or centre position.</p>
+<p>Now, add motor blocks to the top part of the condition in each of the “Up” and “Down” controllers that set the direction and speed of the motor. Set the up one to turn clockwise at 255 speed and the down one to turn counter-clockwise at 255 speed.</p>
+<figure>
+<img src="./images/motor-control.png" alt="Motor Turn" /><figcaption>Motor Turn</figcaption>
+</figure>
+<p>When you run this code you should be able to push the joystick up and down and make the motor turn in different directions.</p>
+<h2 id="build-code-in-javascript-2"><a href="#build-code-in-javascript-2">Build code in JavaScript</a></h2>
+<p>To build a similar circuit in javascript to run from a console we can use an script such as the following.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="co">// TODO</span></code></pre>
+<p>Make sure you have the Johnny-Five package installed and you can run it from the command line with</p>
+<pre><code>node code/motor.js</code></pre>
+<p>When you run this code, if you press the up and down arrows you will change the direction of the motor turning.</p>
+<h2 id="going-further-2"><a href="#going-further-2">Going further</a></h2>
+<p>Other things you can do:</p>
+<ul>
+<li>Make sure your motor is turning the right direction when you look at the wheel. If it isn’t, flip your motor wires around in the screw terminal to get it going as you’d expect it to.</li>
+<li>Move onto <a href="./robot.md">Exercise 4 - Control a wheeled robot</a></li>
+</ul>
+<!--- pandoc commands --->
+<p></p>
+<h1 id="exercise-4-control-a-wheeled-robot"><a href="#exercise-4-control-a-wheeled-robot">Exercise 4: Control a wheeled robot</a></h1>
+<p>Robots can take many different designs for locomotion. The design we’ll use is a classic that is well known and has been used in all sorts of robots since the earliest days of robotics. This is known as a 2 Wheeled, Differential design.</p>
+<p>How it works is that each of the wheels is connected to an independent motor which can be used to drive its wheel forwards or backwards. This means that by combining the directions of the two motors you can drive forwards, backwards and turn left and right.</p>
+<p>The left and right turns are often executed as pivots - eg by turning the left wheel backwards whilst driving the right wheel forwards - however more sophisticated turns can be achieved by slowing the speed of the “inside” wheel whilst keeping the “outside” wheel constant. This is the way you would execute a turn around a corner like you’d drive a car, rather than going to the middle of an intersection and pivoting to the direction of the road you want to turn into.</p>
+<p>In this exercise we’ll execute a simple pivot which will be enough to illustrate the concepts and you will be able to use the joystick or arrow keys to control the robot.</p>
+<h2 id="build-the-circuit-3"><a href="#build-the-circuit-3">Build the circuit</a></h2>
+<h3 id="requirements-3"><a href="#requirements-3">Requirements</a></h3>
+<ul>
+<li>2x DC Motors</li>
+<li>1x Motor Controller</li>
+<li>1x Battery pack</li>
+<li>1x Arduino</li>
+<li>Jumper wires</li>
+</ul>
+<p>It is assumed you worked through the <a href="./motor.md">motor exercise</a> so please do that if you haven’t already. This circuit is an extension of that one where the right motor uses the “A” channel for control connected to pins 8 and 9.</p>
+<p>Build the circuit below.</p>
+<figure>
+<img src="images/robot_schem.png" alt="Drive Circuit" /><figcaption>Drive Circuit</figcaption>
+</figure>
+<h2 id="build-the-code-in-robotnik-3"><a href="#build-the-code-in-robotnik-3">Build the code in Robotnik</a></h2>
+<p>It’s assumed you’re familiar with the way Robotnik works how so here’s some tips on how to build the control.</p>
+<p>You need states to detect the up, down, left &amp; right directions. You can also lay them out on the workspace in a way that makes conceptual sense as well.</p>
+<figure>
+<img src="./images/robot-events.png" alt="Directions" /><figcaption>Directions</figcaption>
+</figure>
+<p>Before you think about your motors, get the states working. You can write messages out to the console to make sure you’re doing the right things at the right time.</p>
+<figure>
+<img src="./images/robot-states.png" alt="States" /><figcaption>States</figcaption>
+</figure>
+<p>If you run this code you’ll start to see messages print out to the terminal window when you push the joystick up and down and when you release it. This is a good way to ensure you have your input logic right and you don’t even need to wire anything up.</p>
+<p>Next you can execute a pivot to the left. For this you turn both motors clockwise. This will make the left side of the robot go backwards and the right side go forwards, thus causing it to pivot towards the left.</p>
+<figure>
+<img src="./images/robot-left.png" alt="Turn left" /><figcaption>Turn left</figcaption>
+</figure>
+<p>Now you can turn left you can build the code to turn right and then to go forwards and backwards using the same logic.</p>
+<p>Try running the code after you work on each block so you can assess your work.</p>
+<p>It’s also easiest to work on things that are similar together eg turning right is just the opposite of going left.</p>
+<h2 id="build-code-in-javascript-3"><a href="#build-code-in-javascript-3">Build code in JavaScript</a></h2>
+<p>Rather than repeat the code here, please see the robot.js file in the code examples for a fully worked example.</p>
+<p>Make sure you have the Johnny-Five package installed and you can run it from the command line with</p>
+<pre><code>node code/robot.js</code></pre>
+<p>When you run this code, if you use the arrow keys you’ll be able to control the direction of the robot.</p>
+<h2 id="going-further-3"><a href="#going-further-3">Going further</a></h2>
+<p>Now it’s time to take your skills to the ring where you’ll battle others.</p>
+<p>Think about your design and come up with your own Sumo bot. The aim is to push the other opponent out of the ring or otherwise incapacitate it. You can only make your robot up to 25x25x25cm in size but you can use any component you want inside that volume.</p>
+<p>When you’re ready and you have your control design sorted, it’s time to go wireless and <a href="./bluetooth.md">switch to bluetooth</a> to control your robot.</p>
+<p>Pro tip: get your control system fully sorted before you go bluetooth. Going wireless adds another layer of potential bugs so eliminate common problems like your control system first before you introduce complexity.</p>
+<!--- pandoc commands --->
+<p></p>
+<h1 id="exercise-5-going-bluetooth"><a href="#exercise-5-going-bluetooth">Exercise 5: Going bluetooth</a></h1>
+<p>This exercise assumes you have your robot working and you’re simply looking to make it bluetooth enabled. In this case, bluetooth is going to be used to replace the USB cable over what’s called Bluetooth Serial.</p>
+<p>All the pairing and everything has already been done so all you need to do is wire the bluetooth module up.</p>
+<p><em>Note that it’s really important to check your wiring. You can easily wreck your bluetooth module if you wire it back to front</em></p>
+<h2 id="build-the-circuit-4"><a href="#build-the-circuit-4">Build the circuit</a></h2>
+<h3 id="requirements-4"><a href="#requirements-4">Requirements</a></h3>
+<ul>
+<li>1x Arduino</li>
+<li>1x Bluetooth module</li>
+<li>Jumper wires</li>
+</ul>
+<p>Disconnect the USB cable and put it to one side then add the circuit below to your existing design.</p>
+<figure>
+<img src="images/bluetooth_bb.png" alt="Bluetooth Circuit" /><figcaption>Bluetooth Circuit</figcaption>
+</figure>
+<h2 id="build-the-code-in-robotnik-4"><a href="#build-the-code-in-robotnik-4">Build the code in Robotnik</a></h2>
+<p>Using this exercise, it will set the port in the code to use the bluetooth module instead of USB which is the default. We have to tell it which module to use however which is why we need a new exercise.</p>
+<p>You can see the code that changes in the image below.</p>
+<figure>
+<img src="./images/bluetooth.png" alt="Different port" /><figcaption>Different port</figcaption>
+</figure>
+<h2 id="going-further-4"><a href="#going-further-4">Going further</a></h2>
+<p>One of the big things you make need to consider is power. If you’re having issues then you might need a second battery pack to deal with the current draw.</p>
+<p>Consider powering the Bluetooth and arduino from one pack and your motors and servos from another (probably the AA batteries).</p>
+<!--- pandoc commands --->
+<p></p>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav id="TOC">
+<ul>
+<li><a href="#robotnik-workshop-notes">Robotnik workshop notes</a><ul>
+<li><a href="#quick-view">Quick view</a></li>
+<li><a href="#running-robotnik">Running robotnik</a><ul>
+<li><a href="#exercises">Exercises</a></li>
+<li><a href="#toolbox">Toolbox</a></li>
+<li><a href="#code-view">Code view</a></li>
+<li><a href="#saving-your-code">Saving your code</a></li>
+<li><a href="#running-your-code">Running your code</a></li>
+</ul></li>
+<li><a href="#running-the-robotnik-server">Running the robotnik server</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="robotnik-workshop-notes"><a href="#robotnik-workshop-notes">Robotnik workshop notes</a></h1>
+<p>This folder has a wealth of information about the robotnik kit we’re working with including information about how the basic circuits work, some thoughts around any physical build requirements you may have and then some examples as well.</p>
+<p>This guide will show you the basics of using robotnik. To see more, look at the readme file in the exercises or physical folders.</p>
+<h2 id="quick-view"><a href="#quick-view">Quick view</a></h2>
+<p>The gif below will show you a super fast view of how the interface works. The rest of this readme guide will explain it in detail.</p>
+<figure>
+<img src="images/robotnik.gif" alt="Walkthrough" /><figcaption>Walkthrough</figcaption>
+</figure>
+<h2 id="running-robotnik"><a href="#running-robotnik">Running robotnik</a></h2>
+<p>This should be up and running on your machine. You can tell if it’s working by running http://localhost:3000 from your development machine. If it’s working you’ll see the workshop selection screen.</p>
+<figure>
+<img src="images/workshop-list.png" alt="Workshop selection screen" /><figcaption>Workshop selection screen</figcaption>
+</figure>
+<p>Choose the workshop and you’ll drop into Exercise 1 with your code workspace.</p>
+<figure>
+<img src="images/workspace.png" alt="The default workspace" /><figcaption>The default workspace</figcaption>
+</figure>
+<p>The key aspects of the workspace are highlighted below.</p>
+<h3 id="exercises"><a href="#exercises">Exercises</a></h3>
+<p>Exercises can be selected from the list on the left. They have instructions as to the goals and an exercise will determine what components you have available to build with.</p>
+<figure>
+<img src="images/workspace-exercises.png" alt="Exercise area" /><figcaption>Exercise area</figcaption>
+</figure>
+<h3 id="toolbox"><a href="#toolbox">Toolbox</a></h3>
+<p>Inside the workspace is the toolbox. This toolbox has components that you can drag onto the main window to compose your code.</p>
+<figure>
+<img src="images/workspace-toolbox.png" alt="Toolbox" /><figcaption>Toolbox</figcaption>
+</figure>
+<p>Select a category of blocks you want to choose from and you can see the available blocks.</p>
+<figure>
+<img src="images/workspace-toolbox-blocks.png" alt="Toolbox blocks" /><figcaption>Toolbox blocks</figcaption>
+</figure>
+<p>Then grab a block and drag it to the main workspace.</p>
+<figure>
+<img src="images/workspace-blocks.png" alt="Blocks" /><figcaption>Blocks</figcaption>
+</figure>
+<h3 id="code-view"><a href="#code-view">Code view</a></h3>
+<p>If you want to look at the code you’re producing, hit the code button and you will see all the javascript your blocks are making.</p>
+<figure>
+<img src="images/workspace-codeview.png" alt="Code view" /><figcaption>Code view</figcaption>
+</figure>
+<h3 id="saving-your-code"><a href="#saving-your-code">Saving your code</a></h3>
+<p>To save your code select the save workspace button on the top right. It’s a good idea to do this once in a while.</p>
+<figure>
+<img src="images/workspace-save.png" alt="Save" /><figcaption>Save</figcaption>
+</figure>
+<h3 id="running-your-code"><a href="#running-your-code">Running your code</a></h3>
+<p>To run your code hit the run code button and your code will launch on the device.</p>
+<figure>
+<img src="images/workspace-run.png" alt="Controls" /><figcaption>Controls</figcaption>
+</figure>
+<p>Whilst the board initialises your controls will show “Waiting for connection”.</p>
+<figure>
+<img src="images/running-controls.png" alt="Control interfance" /><figcaption>Control interfance</figcaption>
+</figure>
+<p>Once complete it will say “Board running”</p>
+<figure>
+<img src="images/controls-now-running.png" alt="Control interface ready" /><figcaption>Control interface ready</figcaption>
+</figure>
+<p>Now you can control your program using the joystick or buttons to create events. Also note that the “R” and “G” keys on your keyboard can be used to “press” the Red and Green buttons as can the arrow keys to simulate the joystick.</p>
+<h2 id="running-the-robotnik-server"><a href="#running-the-robotnik-server">Running the robotnik server</a></h2>
+<p>If the Robotnik server is not running do the following:</p>
+<p>Open a terminal and:</p>
+<pre><code>cd ~/dev/robotnik
+node run webserver</code></pre>
+<p>You should now be able to visit http://localhost:3000 and the robotnik server will run.</p>
+</body>
+</html>

@@ -21,7 +21,7 @@ bluetooth module if you wire it back to front*
 Disconnect the USB cable and put it to one side then add the circuit below to
 your existing design.
 
-![Bluetooth Circuit](./bluetooth_bb.png)
+![Bluetooth Circuit](images/bluetooth_bb.png)
 
 ## Build the code in Robotnik
 

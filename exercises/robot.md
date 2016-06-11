@@ -36,7 +36,7 @@ right motor uses the "A" channel for control connected to pins 8 and 9.
 
 Build the circuit below.
 
-![Drive Circuit](./robot_schem.png)
+![Drive Circuit](images/robot_schem.png)
 
 ## Build the code in Robotnik
 

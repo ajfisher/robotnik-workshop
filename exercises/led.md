@@ -25,7 +25,7 @@ connects to your source of power through the resistor (which slows the flow of
 current and stops the LED from burning out). The "short" leg is the negative
 side and it is connected to ground.
 
-![LED Circuit](./led_bb.png)
+![LED Circuit](./images/led_bb.png)
 
 Make sure the LED is connected to pin 11.
 

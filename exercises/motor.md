@@ -28,7 +28,7 @@ are attaching them to.
 
 Build the circuit below.
 
-![Servo Circuit](./motor_schematic.png)
+![Servo Circuit](images/motor_schematic.png)
 
 
 ## Build the code in Robotnik

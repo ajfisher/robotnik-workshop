@@ -24,7 +24,7 @@ Small servos like this one can be run from the arduino when this is the only
 thing being powered but generally the power and ground would connect to a battery
 instead.
 
-![Servo Circuit](./servo_bb.png)
+![Servo Circuit](images/servo_bb.png)
 
 Make sure the Servo is connected to pin 3.
 

@@ -1,0 +1,78 @@
+/* Style sheet for pandoc */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 2.4rem;
+    color: #3f3f3f;
+    padding: 1rem 20%;
+    font-family: sans-serif;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+p, ul li {
+	font-size: 1.1rem;
+}
+
+a, a:visited {
+    color: #47a14c;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#2c76b9;
+}
+
+code {
+    font-size: 1rem;
+}
+
+/** Do the navigation stuff here **/
+
+nav#TOC {
+    position: fixed;
+    width: 15%;
+    left: 0;
+    top: 0;
+    padding-top: 1rem;
+    overflow: auto;
+    height: 100%
+}
+
+nav#TOC ul {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+nav#TOC ul li {
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
