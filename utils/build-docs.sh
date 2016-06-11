@@ -9,3 +9,6 @@ pandoc -s -S --highlight-style pygments -t html5 --toc --toc-depth=2  -c ../css/
 
 cd ..
 pandoc -s -S --highlight-style pygments -t html5 --toc -c css/styles.css -o README.html README.md
+
+cd physical
+pandoc -s -S -t html5 --toc -c ../css/styles.css -o README.html README.md
