@@ -94,7 +94,7 @@ Open a terminal and:
 
 ```
 cd ~/dev/robotnik
-node run webserver
+node webserver.js
 ```
 
 You should now be able to visit http://localhost:3000 and the robotnik server
