@@ -1,7 +1,7 @@
-# NodeBots workshop:<br/>Societal Relevance<br/>STEM event
+# NodeBots workshop:<br/>PwC's STEM Robot Challenge
 <!-- .slide: class="title" -->
 
-PWC Melbourne<!-- .element: class="location" -->
+PwC Melbourne<!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher<!-- .element: class="author" -->
 
@@ -151,7 +151,7 @@ robotics backgrounds.
 
 ---
 
-nodebotsau.io<!-- .element class="bigtext" -->
+nodebotsau.io/melbourne<!-- .element class="bigtext" style="text-align: center; padding-top: 10%" -->
 
 Notes:
 
@@ -421,8 +421,9 @@ of the bout. You have a charger for a reason, plug it in and keep it topped up.
 
 ## Resources
 
+* WiFI: "Wireless@Guest" user: melb2, pass: vPHPo
 * github.com/ajfisher/robotnik-workshop
-* nodebotsau.io
+* nodebotsau.io/melbourne
 * @nodebotsau
 * hackmelbourne.org
 
@@ -432,9 +433,9 @@ So if you want to do more and look for more info, here's some places to do so.
 
 ---
 
-# NodeBots workshop:<br/>Societal Relevance<br/>STEM event
+# NodeBots workshop:<br/>PwC's STEM Robot Challenge
 <!-- .slide: class="title" -->
 
-PWC Melbourne<!-- .element: class="location" -->
+PwC Melbourne<!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher<!-- .element: class="author" -->
