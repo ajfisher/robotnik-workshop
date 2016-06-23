@@ -8,8 +8,6 @@ Andrew Fisher @ajfisher<!-- .element: class="author" -->
 
 Notes:
 
-Press 'S' for full notes -- .element: class="instruction" --
-
 Hi, my name is Andrew Fisher and I'm an interaction developer and I also build
 robots with JavaScript. I am a core member of the NodeBots
 project so in my non-work time I look at and build ways to use web
@@ -421,7 +419,6 @@ of the bout. You have a charger for a reason, plug it in and keep it topped up.
 
 ## Resources
 
-* WiFI: "Wireless@Guest" user: melb2, pass: vPHPo
 * github.com/ajfisher/robotnik-workshop
 * nodebotsau.io/melbourne
 * @nodebotsau

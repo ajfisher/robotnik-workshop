@@ -384,3 +384,34 @@ iframe.external {
 
 p.bigtext {
   font-size: 2em; }
+
+body.print-pdf .reveal a.download {
+  display: none; }
+
+body.print-pdf .reveal aside.notes, body.production .reveal aside.notes {
+  /* display: none; */
+  display: block !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 12em;
+  font-size: 0.35em;
+  background-color: rgba(64, 64, 64, 0.6);
+  padding: 0.5em 1em; }
+
+body.production .reveal aside.notes {
+  top: 1.4em; }
+
+body.print-pdf h3, body.production h3 {
+  font-size: 1.7em; }
+
+body.print-pdf h2, body.production h2 {
+  font-size: 1.7em; }
+
+.reveal .slides > section {
+  left: 0%;
+  top: 0%; }
+
+body.chrome .reveal .slides > section {
+  left: -50%;
+  top: -50%; }

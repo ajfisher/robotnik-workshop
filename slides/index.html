@@ -22,11 +22,13 @@
 
 		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
 		</script>
 
 		<!--[if lt IE 9]>
@@ -40,8 +42,8 @@
 
 			<div class="slides">
 
-                <section data-markdown="slides.md"  
-                         data-separator="^\n---"  
+                <section data-markdown="slides.md"
+                         data-separator="^\n---"
                          data-separator-notes="^Notes:">
                 </section>
 			</div>
@@ -51,6 +53,13 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
+			if( window.location.hostname.match( /ajf/gi ) ) {
+                document.getElementsByTagName("body")[0].className = "production";
+            }
+
+            if (navigator.userAgent.match(/chrome/gi)) {
+                //document.getElementsByTagName("body")[0].className += " chrome";
+            }
 
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
