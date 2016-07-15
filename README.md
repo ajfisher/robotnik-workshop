@@ -1,12 +1,10 @@
 # Robotnik workshop notes
 
 This folder has a wealth of information about the robotnik kit we're working
-with including information about how the basic circuits work, some thoughts
-around any physical build requirements you may have and then some examples as
-well.
+with including information about how the basic circuits work.
 
 This guide will show you the basics of using robotnik. To see more, look at the
-readme file in the exercises or physical folders.
+readme file in the exercises folder.
 
 ## Quick view
 
