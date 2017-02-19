@@ -9,6 +9,13 @@ of the joystick.
 
 ## Build the circuit
 
+### WARNING
+
+The motor controller you are using is polarised. This means if you wire it back
+to front you will destroy it!
+
+Check the circuit diagram or ask a helper to confirm if you're in doubt.
+
 ### Requirements
 
 * 1x DC Motor
@@ -18,7 +25,7 @@ of the joystick.
 * Jumper wires
 
 The motor controller has two "channels" which can be used to control 2 different
-DC motors. Each channel (labelled A and B) then has two pins used to control the
+DC motors. Each channel (labelled A and B) has two pins used to control the
 speed and direction of the motor. These are labelled "1A" and "1B" so you end up
 with "A-1A", "A-1B" to control the A motor and "B-1A", "B-1B" to control the B
 motor.
@@ -28,7 +35,9 @@ are attaching them to.
 
 Build the circuit below.
 
-![Servo Circuit](images/motor_schematic.png)
+![Motor Diagram](images/motor_bb.png)
+
+![Motor Circuit](images/motor_schematic.png)
 
 
 ## Build the code in Robotnik

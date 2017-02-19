@@ -191,6 +191,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p>A normal DC motor is great for turning wheels however they can draw a lot of current. Far too much for an arduino to support. As such a motor controller is used to manage the speed and direction of the motor.</p>
 <p>In this exercise, you’ll make a motor change directions based on the position of the joystick.</p>
 <h2 id="build-the-circuit-2"><a href="#build-the-circuit-2">Build the circuit</a></h2>
+<h3 id="warning"><a href="#warning">WARNING</a></h3>
+<p>The motor controller you are using is polarised. This means if you wire it back to front you will destroy it!</p>
+<p>Check the circuit diagram or ask a helper to confirm if you’re in doubt.</p>
 <h3 id="requirements-2"><a href="#requirements-2">Requirements</a></h3>
 <ul>
 <li>1x DC Motor</li>
@@ -199,11 +202,14 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li>1x Arduino</li>
 <li>Jumper wires</li>
 </ul>
-<p>The motor controller has two “channels” which can be used to control 2 different DC motors. Each channel (labelled A and B) then has two pins used to control the speed and direction of the motor. These are labelled “1A” and “1B” so you end up with “A-1A”, “A-1B” to control the A motor and “B-1A”, “B-1B” to control the B motor.</p>
+<p>The motor controller has two “channels” which can be used to control 2 different DC motors. Each channel (labelled A and B) has two pins used to control the speed and direction of the motor. These are labelled “1A” and “1B” so you end up with “A-1A”, “A-1B” to control the A motor and “B-1A”, “B-1B” to control the B motor.</p>
 <p>Finally, the motor wires are connected to the screw terminal for the channel you are attaching them to.</p>
 <p>Build the circuit below.</p>
 <figure>
-<img src="images/motor_schematic.png" alt="Servo Circuit" /><figcaption>Servo Circuit</figcaption>
+<img src="images/motor_bb.png" alt="Motor Diagram" /><figcaption>Motor Diagram</figcaption>
+</figure>
+<figure>
+<img src="images/motor_schematic.png" alt="Motor Circuit" /><figcaption>Motor Circuit</figcaption>
 </figure>
 <h2 id="build-the-code-in-robotnik-2"><a href="#build-the-code-in-robotnik-2">Build the code in Robotnik</a></h2>
 <p>Select the <code>Controller</code> from the toolbox then grab the controller block and drop it onto the workspace. This time we want to select the “Up” event and we want to add another controller where we select the “Down” event.</p>
@@ -240,6 +246,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p>The left and right turns are often executed as pivots - eg by turning the left wheel backwards whilst driving the right wheel forwards - however more sophisticated turns can be achieved by slowing the speed of the “inside” wheel whilst keeping the “outside” wheel constant. This is the way you would execute a turn around a corner like you’d drive a car, rather than going to the middle of an intersection and pivoting to the direction of the road you want to turn into.</p>
 <p>In this exercise we’ll execute a simple pivot which will be enough to illustrate the concepts and you will be able to use the joystick or arrow keys to control the robot.</p>
 <h2 id="build-the-circuit-3"><a href="#build-the-circuit-3">Build the circuit</a></h2>
+<h3 id="warning-1"><a href="#warning-1">WARNING</a></h3>
+<p>The motor controller you are using is polarised. This means if you wire it back to front you will destroy it!</p>
+<p>Check the circuit diagram or ask a helper to confirm if you’re in doubt.</p>
 <h3 id="requirements-3"><a href="#requirements-3">Requirements</a></h3>
 <ul>
 <li>2x DC Motors</li>
@@ -250,6 +259,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
 </ul>
 <p>It is assumed you worked through the <a href="./motor.md">motor exercise</a> so please do that if you haven’t already. This circuit is an extension of that one where the right motor uses the “A” channel for control connected to pins 8 and 9.</p>
 <p>Build the circuit below.</p>
+<figure>
+<img src="images/robot_bb.png" alt="Drive Circuit" /><figcaption>Drive Circuit</figcaption>
+</figure>
 <figure>
 <img src="images/robot_schem.png" alt="Drive Circuit" /><figcaption>Drive Circuit</figcaption>
 </figure>

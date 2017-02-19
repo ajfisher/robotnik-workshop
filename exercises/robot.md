@@ -22,6 +22,13 @@ the robot.
 
 ## Build the circuit
 
+### WARNING
+
+The motor controller you are using is polarised. This means if you wire it back
+to front you will destroy it!
+
+Check the circuit diagram or ask a helper to confirm if you're in doubt.
+
 ### Requirements
 
 * 2x DC Motors
@@ -35,6 +42,8 @@ that if you haven't already. This circuit is an extension of that one where the
 right motor uses the "A" channel for control connected to pins 8 and 9.
 
 Build the circuit below.
+
+![Drive Circuit](images/robot_bb.png)
 
 ![Drive Circuit](images/robot_schem.png)
 

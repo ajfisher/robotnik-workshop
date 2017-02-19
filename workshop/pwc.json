@@ -96,6 +96,8 @@
         {
             "name": "Blink an LED",
             "description": "Make the LED connected to pin 11 turn on and off when you press the button",
+            "diagram": "http://localhost:8080/exercises/images/led_bb.svg",
+            "link": "http://localhost:8080/exercises/README.html#exercise-1-blinking-an-led",
             "components": [
                 "led11"
             ]
@@ -103,6 +105,8 @@
         {
             "name": "Move a servo",
             "description": "Make the servo attached to pin 3 change position as you press and release the green button",
+            "diagram": "http://localhost:8080/exercises/images/servo_bb.svg",
+            "link": "http://localhost:8080/exercises/README.html#exercise-2-moving-a-servo",
             "components": [
                 "led11", "servo1", "servo2"
             ]
@@ -110,6 +114,8 @@
         {
             "name": "Spin a motor",
             "description": "Now make the left motor turn different directions based on which button you press.",
+            "diagram": "",
+            "link": "http://localhost:8080/exercises/README.html#exercise-3-spinning-a-motor",
             "components": [
                 "leftMotor", "rightMotor"
             ]
@@ -117,6 +123,8 @@
         {
             "name": "Control a wheeled robot",
             "description": "Now control both motors depending on the direction of the joystick",
+            "diagram": "http://localhost:8080/exercises/images/robot_bb.png",
+            "link": "http://localhost:8080/exercises/README.html#exercise-4-control-a-wheeled-robot",
             "components": [
                 "leftMotor", "rightMotor", "led11", "servo1", "servo2"
             ]
@@ -124,6 +132,8 @@
         {
             "name": "Switching to bluetooth",
             "description": "Now we need to untether your robot",
+            "diagram": "http://localhost:8080/exercises/images/bluetooth_bb.png",
+            "link": "http://localhost:8080/exercises/README.html#exercise-5-going-bluetooth",
             "board_opts": {
                 "port": "/dev/rfcomm0"
             },
