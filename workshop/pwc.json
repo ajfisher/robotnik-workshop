@@ -114,7 +114,7 @@
         {
             "name": "Spin a motor",
             "description": "Now make the left motor turn different directions based on which button you press.",
-            "diagram": "",
+            "diagram": "http://localhost:8080/exercises/images/motor_bb.png",
             "link": "http://localhost:8080/exercises/README.html#exercise-3-spinning-a-motor",
             "components": [
                 "leftMotor", "rightMotor"
