@@ -95,7 +95,7 @@
     "exercises": [
         {
             "name": "Blink an LED",
-            "description": "Make the LED connected to pin 11 turn on and off when you press the button",
+            "description": "Make the LED connected to pin 11 (an actuator) turn on and off when you press a button (a controller).",
             "diagram": "http://localhost:8080/exercises/images/led_bb.svg",
             "link": "http://localhost:8080/exercises/README.html#exercise-1-blinking-an-led",
             "components": [
@@ -104,7 +104,7 @@
         },
         {
             "name": "Move a servo",
-            "description": "Make the servo attached to pin 3 change position as you press and release the green button",
+            "description": "Make the servo attached to pin 3 (an actuator) change position as you press and release the green button",
             "diagram": "http://localhost:8080/exercises/images/servo_bb.svg",
             "link": "http://localhost:8080/exercises/README.html#exercise-2-moving-a-servo",
             "components": [
@@ -113,7 +113,7 @@
         },
         {
             "name": "Spin a motor",
-            "description": "Now make the left motor turn different directions based on which button you press.",
+            "description": "Now make the left motor turn different directions depending on which way you push the joystick.",
             "diagram": "http://localhost:8080/exercises/images/motor_bb.png",
             "link": "http://localhost:8080/exercises/README.html#exercise-3-spinning-a-motor",
             "components": [
@@ -122,7 +122,7 @@
         },
         {
             "name": "Control a wheeled robot",
-            "description": "Now control both motors depending on the direction of the joystick",
+            "description": "Control both motors depending on the direction of the joystick or arrow keys.",
             "diagram": "http://localhost:8080/exercises/images/robot_bb.png",
             "link": "http://localhost:8080/exercises/README.html#exercise-4-control-a-wheeled-robot",
             "components": [
@@ -130,8 +130,8 @@
             ]
         },
         {
-            "name": "Switching to bluetooth",
-            "description": "Now we need to untether your robot",
+            "name": "Switch to bluetooth",
+            "description": "Untether your robot by switching to bluetooth.",
             "diagram": "http://localhost:8080/exercises/images/bluetooth_bb.png",
             "link": "http://localhost:8080/exercises/README.html#exercise-5-going-bluetooth",
             "board_opts": {
