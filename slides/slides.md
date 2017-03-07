@@ -1,7 +1,7 @@
-# NodeBots workshop:<br/>PwC's STEM Robot Challenge
+# NodeBots workshop:<br/>PwC's Robot Challenge
 <!-- .slide: class="title" -->
 
-PwC Melbourne<!-- .element: class="location" -->
+PwC Brisbane<!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher<!-- .element: class="author" -->
 
@@ -25,8 +25,7 @@ mini robot sumo battle.
 1. Why NodeBots?
 2. Building simple circuits.
 3. SumoBot Challenge
-4. Break
-5. SumoBot Battles
+4. SumoBot Battles
 
 Notes:
 
@@ -41,8 +40,8 @@ be using and get you all to build a demo.
 After that I'll lay out the the challenge and give you some tips and then it
 will be into the build phase in your teams in earnest.
 
-We'll have some food about 6ish so you'll be able to top up for the final push
-and look to have our builds done for about 7:20, ready to face off in the ring.
+We'll be building through to about 5pm at which point we'll be doing a round
+robin on battles with the top 4 teams progressing to a semi final and then final.
 
 So let's get started.
 
@@ -67,18 +66,6 @@ ATLAS (C) <!-- .element: class="attribution" -->
 Notes:
 
 From those that look like us and are somewhat creepy.
-
----
-
-## Explorers
-<!-- .slide: data-background="/images/curiosity.jpg" -->
-
-(C) <!-- .element: class="attribution" -->
-[NASA](#)
-
-Notes:
-
-To those that are helping humanity reach out into space
 
 ---
 
@@ -107,10 +94,10 @@ Notes:
 
 All of this is really worthy stuff and great if you have millions or in some
 cases billions of dollars to play with but there are a bunch of overlapping
-trends in things like the price of electronics, AI and expert systems, machine learning,
-sensor networks, ubiquity of wireless networks that are making now a great time
+trends in things like the price of electronics, AI and machine learning,
+sensor networks and ubiquity of wireless networks that are making now a great time
 for robotics specifically but also lots of applications of intelligent, connected,
-useful hardware that can be used in many interesting ways.
+useful hardware that can be used in many interesting ways to just improve our lives.
 
 ---
 
@@ -118,16 +105,17 @@ useful hardware that can be used in many interesting ways.
 <!-- .slide: data-background="/images/np_glasses.jpg" -->
 
 Glasses (C)<!-- .element: class="attribution" -->
-[Andy Gelme](https://twitter.com/geekscape) | 
+[Andy Gelme](https://twitter.com/geekscape) |
 Image (CC) [Matthew Bergman](7215764961901652://www.flickr.com/photos/matthewbergman/15337663413/)
 
 Notes:
 
-So NodeBots is a global open source project with contributors from all over the
+A nexus of this is the NodeBots project.
+NodeBots is an open source project with contributors from all over the
 world who are looking at ways to bring the web - one of the most ubiquitous
 pieces of interaction technology in history together with hardware. Everything
 you'll be using today is a product of that - you'll be programming in a web
-browser, running javascript to control a robot.
+browser, running javascript to control a robot using bluetooth.
 
 ---
 
@@ -143,20 +131,6 @@ Notes:
 We think there's a huge opportunity to bring web tech and hardware together
 because the web is the natural interface for many applications of smart tech.
 
-I also believe that the web is highly accessible and is an inclusive community so
-provides a great opportunity for people to get involved from non-traditional
-robotics backgrounds.
-
----
-
-nodebotsau.io/melbourne<!-- .element class="bigtext" style="text-align: center; padding-top: 10%" -->
-
-Notes:
-
-If you want to know more, visit that link, we run events every month and have
-a big international event coming up in July which we'd love to have people
-participate in.
-
 ---
 
 ## First circuits
@@ -167,7 +141,8 @@ participate in.
 
 Notes:
 
-Right - so let's get on and start you on your path to build some bots. Now
+Right - enough of the why. Let's get onto the how and start you on your
+path to bot building. Now
 we are going to have to talk some electronics but I promise it won't take
 long and you'll make things at the same time.
 
@@ -176,7 +151,7 @@ then we'll build the same circuit using our processor to control it.
 
 ---
 
-### Ohm's Law
+### Basic electronics
 ![](images/water-tank.jpg)
 
 (C) <!-- .element: class="attribution" -->
@@ -184,9 +159,20 @@ then we'll build the same circuit using our processor to control it.
 
 Notes:
 
-This is the basics of all electronics. Voltage is the pressure of the water
-current is how fast it's flowing and resistance is how we change either of these
-two things.
+You can think of simple electronics using the idea of water. The electricity
+is like water and just as water flows along a pipe, electricity can flow along
+a wire. The ideas behind it work the same way too. Voltage is the pressure of
+the water - so a big tank will give you more pressure than a tiny little one.
+
+Current is how fast the electricity is flowing.
+
+These are then affected by resistance. And you can think of that as the diameter
+of the pipe. Take a big pressure and try and push it through a small pipe and
+you won't get much flow and vice versa with a big pipe.
+
+Pretty much all simple electronics is making trade offs between these things and
+using the pressure and the flow to do meaningful work which you could think
+of as like putting a paddle wheel in a stream to do some sort of activity.
 
 ---
 
@@ -196,12 +182,12 @@ two things.
 (CC) <!-- .element: class="attribution" -->
 [Grafitti Research Lab](#)
 
-
 Notes:
+
+Let's take that idea and make something that can do some work.
 
 This is what we're going to build - a simple LED connected to a battery. IE
 the basis of pretty much all modern torches.
-
 
 ---
 
@@ -213,7 +199,7 @@ Notes:
 
 An LED needs a resistor or it draws too much current and it will get destroyed.
 
-Like this. //DEMO it with a couple of LEDs.// 
+Like this. //DEMO it with a couple of LEDs.//
 
 If you really want to break some LEDs then here's a bag and here's a battery.
 Just make sure you throw the LEDs out when you're done.
@@ -420,9 +406,8 @@ of the bout. You have a charger for a reason, plug it in and keep it topped up.
 ## Resources
 
 * github.com/ajfisher/robotnik-workshop
-* nodebotsau.io/melbourne
+* nodebotsau.io
 * @nodebotsau
-* hackmelbourne.org
 
 Notes:
 
@@ -430,9 +415,9 @@ So if you want to do more and look for more info, here's some places to do so.
 
 ---
 
-# NodeBots workshop:<br/>PwC's STEM Robot Challenge
+# NodeBots workshop:<br/>PwC's Robot Challenge
 <!-- .slide: class="title" -->
 
-PwC Melbourne<!-- .element: class="location" -->
+PwC Brisbane<!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher<!-- .element: class="author" -->
