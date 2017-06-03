@@ -94,9 +94,15 @@
     ],
     "exercises": [
         {
+            "name": "Light an LED",
+            "description": "Make a basic, analog circuit that lights up an LED",
+            "diagram": "http://localhost:8080/exercises/images/led_analog_bb.png",
+            "compenents": []
+        },
+        {
             "name": "Blink an LED",
             "description": "Make the LED connected to pin 11 (an actuator) turn on and off when you press a button (a controller).",
-            "diagram": "http://localhost:8080/exercises/images/led_bb.svg",
+            "diagram": "http://localhost:8080/exercises/images/led_bb.png",
             "link": "http://localhost:8080/exercises/README.html#exercise-1-blinking-an-led",
             "components": [
                 "led11"
@@ -105,7 +111,7 @@
         {
             "name": "Move a servo",
             "description": "Make the servo attached to pin 3 (an actuator) change position as you press and release the green button",
-            "diagram": "http://localhost:8080/exercises/images/servo_bb.svg",
+            "diagram": "http://localhost:8080/exercises/images/servo_bb.png",
             "link": "http://localhost:8080/exercises/README.html#exercise-2-moving-a-servo",
             "components": [
                 "led11", "servo1", "servo2"
