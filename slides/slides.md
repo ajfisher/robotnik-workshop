@@ -1,7 +1,7 @@
 # NodeBots workshop:<br/>PwC's Robot Challenge
 <!-- .slide: class="title" -->
 
-PwC Brisbane<!-- .element: class="location" -->
+PwC Melbourne<!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher<!-- .element: class="author" -->
 
@@ -40,7 +40,7 @@ be using and get you all to build a demo.
 After that I'll lay out the the challenge and give you some tips and then it
 will be into the build phase in your teams in earnest.
 
-We'll be building through to about 5pm at which point we'll be doing a round
+We'll be building through to about 7pm at which point we'll be doing a round
 robin on battles with the top 4 teams progressing to a semi final and then final.
 
 So let's get started.
@@ -93,7 +93,7 @@ or mining or construction.
 Notes:
 
 All of this is really worthy stuff and great if you have millions or in some
-cases billions of dollars to play with but there are a bunch of overlapping
+cases billions of dollars to play with but, there are a bunch of overlapping
 trends in things like the price of electronics, AI and machine learning,
 sensor networks and ubiquity of wireless networks that are making now a great time
 for robotics specifically but also lots of applications of intelligent, connected,
@@ -115,7 +115,7 @@ NodeBots is an open source project with contributors from all over the
 world who are looking at ways to bring the web - one of the most ubiquitous
 pieces of interaction technology in history together with hardware. Everything
 you'll be using today is a product of that - you'll be programming in a web
-browser, running javascript to control a robot using bluetooth.
+browser, running javascript to control a robot over bluetooth.
 
 ---
 
@@ -129,7 +129,10 @@ Image (CC) [Matthew Bergman](https://www.flickr.com/photos/matthewbergman/159695
 Notes:
 
 We think there's a huge opportunity to bring web tech and hardware together
-because the web is the natural interface for many applications of smart tech.
+because the web is the natural interface that is accessible on pretty much
+any networked device that has a screen and has none of the friction of downloaded
+apps. So you can get up and running very quickly, right from the browser,
+which you're going to see shortly.
 
 ---
 
@@ -146,8 +149,8 @@ path to bot building. Now
 we are going to have to talk some electronics but I promise it won't take
 long and you'll make things at the same time.
 
-We're going to start with an analog circuit - that means no processor involved
-then we'll build the same circuit using our processor to control it.
+We're going to start with an analog circuit - then we'll take the same circuit
+and use our processor to control it.
 
 ---
 
@@ -176,24 +179,24 @@ of as like putting a paddle wheel in a stream to do some sort of activity.
 
 ---
 
-### Building a throwie
-<!-- .slide: data-background="/images/throwie_start.jpg" -->
+### Building a torch
+<!-- .slide: data-background="/images/nano-led.jpg" -->
 
 (CC) <!-- .element: class="attribution" -->
-[Grafitti Research Lab](#)
+[ajfisher](#)
 
 Notes:
 
 Let's take that idea and make something that can do some work.
 
-This is what we're going to build - a simple LED connected to a battery. IE
+This is what we're going to build - a simple LED connected to a power source. IE
 the basis of pretty much all modern torches.
 
 ---
 
-### Building a throwie
+### Building a torch
 
-<img src="images/throwie.png" width="60%"/>
+<img src="images/led_analog_bb.png" width="40%"/>
 
 Notes:
 
@@ -203,15 +206,6 @@ Like this. //DEMO it with a couple of LEDs.//
 
 If you really want to break some LEDs then here's a bag and here's a battery.
 Just make sure you throw the LEDs out when you're done.
-
----
-
-### Make the throwie
-<!-- .slide: data-background="/images/throwie1.jpg" -->
-
-Notes:
-
-Explain how to make it.
 
 ---
 
@@ -343,9 +337,9 @@ Notes:
 
 So speaking of bots, here's what's going to happen next. Your aim is to build
 a bot to compete in a sumobot competition at the end of our session at about
-7:20ish.
+7ish.
 
-The ring is here on the floor in front of me.
+The rings are here.
 
 ---
 
@@ -418,6 +412,6 @@ So if you want to do more and look for more info, here's some places to do so.
 # NodeBots workshop:<br/>PwC's Robot Challenge
 <!-- .slide: class="title" -->
 
-PwC Brisbane<!-- .element: class="location" -->
+PwC Melbourne<!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher<!-- .element: class="author" -->
